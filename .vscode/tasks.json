@@ -1,0 +1,46 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Expo: Start Android",
+      "type": "shell",
+      "command": "$adb = Join-Path $env:ANDROID_HOME 'platform-tools\\adb.exe'; $devices = & $adb devices; if ($devices -notmatch 'emulator-\\d+\\s+device') { Start-Process (Join-Path $env:ANDROID_HOME 'emulator\\emulator.exe') -ArgumentList '-avd','Medium_Phone'; & $adb wait-for-device }; npx expo start --android --localhost",
+      "options": {
+        "env": {
+          "PATH": "${env:PATH};${env:ANDROID_HOME}\\platform-tools;${env:ANDROID_HOME}\\emulator"
+        }
+      },
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "expo",
+        "fileLocation": "absolute",
+        "pattern": {
+          "regexp": "^$"
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "Starting Metro Bundler|Starting project",
+          "endsPattern": "Metro: exp://.*:8081|Android Bundled|Waiting on .*:8081|Logs for your project will appear below"
+        }
+      }
+    },
+    {
+      "label": "Expo: Start web",
+      "type": "shell",
+      "command": "npm run web -- --localhost",
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "expo",
+        "fileLocation": "absolute",
+        "pattern": {
+          "regexp": "^$"
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "Starting Metro Bundler|Starting project",
+          "endsPattern": "Web is waiting|Waiting on http://localhost:8081|localhost:8081"
+        }
+      }
+    }
+  ]
+}

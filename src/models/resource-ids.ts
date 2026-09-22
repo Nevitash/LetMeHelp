@@ -1,0 +1,25 @@
+import { ResourceIdMap } from "./types";
+
+export const ResourceIds = {
+  ATTACK: "attack",
+  DASH: "dash",
+  DISENGAGE: "disengage",
+  DODGE: "dodge",
+  HELP: "help",
+  HIDE: "hide",
+  INFLUENCE: "influence",
+  MAGIC: "magic",
+  READY: "ready",
+  SEARCH: "search",
+  UTILIZE: "utilize",
+  LIGHT_WEAPON_EXTRA_ATTACK: "light-weapon-extra-attack",
+  FEATURE_OR_SPELL_BONUS_ACTION: "feature-or-spell-bonus-action",
+  OPPORTUNITY_ATTACK: "opportunity-attack",
+  READIED_ACTION: "readied-action",
+  FEATURE_OR_SPELL_REACTION: "feature-or-spell-reaction",
+  COMMUNICATE: "communicate",
+  INTERACT_WITH_OBJECT: "interact-with-object",
+  DROP_ITEM: "drop-item",
+  END_CONCENTRATION: "end-concentration",
+  CHANGE_WEAPON: "change-weapon",
+} as const satisfies ResourceIdMap;
