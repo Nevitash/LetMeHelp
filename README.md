@@ -1,4 +1,4 @@
-﻿# LetMeHelp _(LetMeHelp)_
+# LetMeHelp _(LetMeHelp)_
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
@@ -23,21 +23,21 @@ LetMeHelp provides an intuitive, accessible helper interface across mobile devic
 
 Requires Node.js and npm:
 
-`ash
+```bash
 npm install
-`
+```
 
 ## Usage
 
 Start the Expo development server:
 
-`ash
+```bash
 npm start
-`
+```
 
 Run target platforms:
 
-`ash
+```bash
 # Run on Android emulator / connected device
 npm run android
 
@@ -46,7 +46,7 @@ npm run ios
 
 # Run web version
 npm run web
-`
+```
 
 ## Maintainers
 
