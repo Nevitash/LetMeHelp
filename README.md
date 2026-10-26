@@ -1,56 +1,61 @@
-# Welcome to your Expo app 👋
+﻿# LetMeHelp _(LetMeHelp)_
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-## Get started
+Cross-platform mobile assistance application built with React Native and Expo.
 
-1. Install dependencies
+LetMeHelp is a mobile utility app powered by Expo Router, NativeWind / Tailwind CSS, and reactive state management (XState, Zustand) designed for quick task delegation and assistance workflows on Android, iOS, and Web.
 
-   ```bash
-   npm install
-   ```
+## Table of Contents
 
-2. Start the app
+- [Background](#background)
+- [Install](#install)
+- [Usage](#usage)
+- [Maintainers](#maintainers)
+- [Contributing](#contributing)
+- [License](#license)
 
-   ```bash
-   npx expo start
-   ```
+## Background
 
-In the output, you'll find options to open the app in a
+LetMeHelp provides an intuitive, accessible helper interface across mobile devices. It leverages modern React Native (0.86+), React 19, and Expo Router to deliver fast, unified client performance on mobile platforms and web targets.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Install
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Requires Node.js and npm:
 
-## Get a fresh project
+`ash
+npm install
+`
 
-When you're ready, run:
+## Usage
 
-```bash
-npm run reset-project
-```
+Start the Expo development server:
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+`ash
+npm start
+`
 
-### Other setup steps
+Run target platforms:
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+`ash
+# Run on Android emulator / connected device
+npm run android
 
-## Learn more
+# Run on iOS simulator
+npm run ios
 
-To learn more about developing your project with Expo, look at the following resources:
+# Run web version
+npm run web
+`
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Maintainers
 
-## Join the community
+[@Nevitash](https://github.com/Nevitash)
 
-Join our community of developers creating universal apps.
+## Contributing
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+PRs accepted. Please open an issue first to discuss substantial feature proposals or design overhauls.
+
+## License
+
+[MIT](LICENSE)
